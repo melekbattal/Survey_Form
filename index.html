@@ -5,11 +5,15 @@
 
         </title>
     </head>
-    <h1 id="title"> NETFLIX </h1>
+    
     <body>
+        <h1 id="title"> NETFLIX </h1>
+        <p id="description"> this is survey about....</p>
+       
+
         <form id="survey-form"></br>
         <div class="form-group">
-            <label id="name-label" for="name">Name</label></br>
+            <label id="name-label" for="name">Name</label>
                 <input
                 type="text"
                 name="name"
@@ -17,19 +21,19 @@
                 class="form-control"
                 placeholder="Enter Your Name or Nickname"
                 required
-                />
-            </div>
-            <label id="location-label" for="Location">Location</label></br>
-            <input
-                type="text"
-                name="Location"
+                /></br>
+            
+             <label id="location-label" for="location">Location</label>
+             <input
+                type="text" 
+                name="location"
                 id="location"
                 class="form-control"
                 placeholder="Where do you live?"
                 required
-                />
-            <div class="form-group">
-                <label id="job-label" for="job">Job</label></br>
+                /></br>
+            
+                <label id="job-label" for="job">Job</label>
                 <input
                     type="text"
                     name="job"
@@ -37,9 +41,54 @@
                     class="form-control"
                     placeholder="What do you do for living?"
                     required
-                    />
-                    </div>
+                    /></br>
+                    <label id="email-label" for="email">Enter your email:</label>
+                <input type="email"
+                       name="email"
+                       id="email"
+                       class="form-control"
+                       required
+                     />
+                     <label id="number-label" for="number">Enter your number:</label>
+                  <input
+                
+                     type="number" min="5" max="15"
+                     name="number"
+                     id="number"
+                     class="form-control"
+                          
+                    
+                    /></br>
+            </div>
+            <label> 
+                <input type="radio"name="gender"required>Female
+             </label>
+                <input type="radio"name="gender"required>Male
+             <label>
+                <input type="radio"name="gender"required>Transgender
+             </label>             
+             <label>
+                <input type="radio"name="gender"required>Non-binary
+             </label>             
+             <label>
+                 <input type="radio" name="gender" required>Prefer not to answer
+             </label>   
+
+             <label for="differentidentity"> 
+                 <input type="radio"name="gender" required> Different identity (Please specify)
+                 <input type="text" id="differentidentity">
+             </label>
+
+             
+            
+             <div class="submit">
+                <input type="submit">
+             </div>
+             <div class="reset">
+               <input type="reset">
+            </div>
         </form>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
 
 </html>
